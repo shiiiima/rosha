@@ -11,9 +11,8 @@ function VideoWrapper (){
         </Grid>
         <Grid className="video-holder" item xs={12} sm={12} md={6} >
            <div className="border-video">
-           <video controls>
-            <source src="../../../src/Assets/videos/video11.mp4" type="video/mp4"/>
-
+           <video controls poster="https://upload.wikimedia.org/wikipedia/commons/d/d5/Pl3.jpg">
+            <source src="../../../src/Assets/videos/video11.mp4" type="video/mp4"/> 
             </video>
            </div>
         </Grid>

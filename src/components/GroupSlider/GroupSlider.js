@@ -28,10 +28,34 @@ export default function GroupSlider() {
   
   return (
     <div className="group-swiper">
+      <div className="silder-title">
+        <h2>
+          خدمات توانمند سازی روشا
+        </h2>
+      </div>
     <Swiper slidesPerView={4} spaceBetween={30} slidesPerGroup={4} centeredSlides={true} loop={true} loopFillGroupWithBlank={true}  pagination={{
   "clickable": true
 }} navigation={true} className="mySwiper">
-  <SwiperSlide ><img className="img-swiper" src={img1}/></SwiperSlide><SwiperSlide><img className="img-swiper" src={img3}/></SwiperSlide><SwiperSlide><img className="img-swiper" src={img3}/></SwiperSlide><SwiperSlide><img className="img-swiper" src={img4}/></SwiperSlide><SwiperSlide></SwiperSlide><SwiperSlide></SwiperSlide><SwiperSlide>Slide 7</SwiperSlide><SwiperSlide>Slide 8</SwiperSlide><SwiperSlide>Slide 9</SwiperSlide>
+  <SwiperSlide >
+    <div className="inner">
+      <img className="img-swiper" src={img3}/>
+    </div>
+    </SwiperSlide>
+    <SwiperSlide>
+      <div className="inner">
+      <img className="img-swiper" src={img3}/>
+    </div>
+    </SwiperSlide>
+    <SwiperSlide>
+    <div className="inner">
+      <img className="img-swiper" src={img3}/>
+    </div>
+    </SwiperSlide>
+    <SwiperSlide>
+    <div className="inner">
+      <img className="img-swiper" src={img3}/>
+    </div>
+    </SwiperSlide>
   </Swiper>
     </div>
   )

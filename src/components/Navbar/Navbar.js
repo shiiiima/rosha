@@ -7,6 +7,7 @@ import "./Navbar.css"
 import BtnSignIn from "../Button/Button"
 import {navitems} from "../Data/Data"
 import DropDown from "../DropDown/DropDown";
+import Logo from "../../Assets/images/uwzwcp.jpg"
 
 function Navbar(){
  const [dropdown,setDropdown]=useState(false)
@@ -17,17 +18,14 @@ function Navbar(){
         <BtnSignIn/>
         </div>
             <div className="navbar-items">
-            <Link to="/" className="navbar-logo"></Link>
-           
-       
            <ul className="nav-items">
                {navitems.map(item=>{
                    if (item.title=="سرویس ها"){
                        return(
                            <li key={item.id} className="nav-item" onMouseEnter={()=>setDropdown(true)} onMouseLeave={()=>setDropdown(false)}>
                        
-                                <i class="fas fa-angle-down"></i>
-                           <Link to="item.path" >{item.title}</Link>
+                                <i class="fa fa-angle-down"></i>
+                           <Link to="item.path" className="nav-link" >{item.title}</Link>
                            {dropdown && <DropDown/>}
                        </li>
                         
@@ -35,7 +33,8 @@ function Navbar(){
                    }
                    return(
                        <li key={item.id} className="nav-item">
-                       <Link to="item.path" >{item.title}</Link>
+                       <Link to="item.path" className="nav-link" >{item.title}</Link>
+                       <i className={item.icon}></i>
                     
                    </li>
                     
@@ -44,6 +43,9 @@ function Navbar(){
                })}
               
            </ul>
+           <Link to="/" className="navbar-logo">
+                <img src={Logo} />
+            </Link>
             </div>
 
         </nav>

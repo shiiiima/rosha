@@ -1,18 +1,28 @@
 .section3 {
   margin-top: 100px !important;
+  height:  450px;
 }
 .header-video {
-  text-align: center;
+  text-align: right;
+  width: 70% ;
+  margin:  0 auto;
+  color: #585454;
+  margin-bottom: 30px;
+  font-size: 32px;
 }
 .text-video {
   text-align: end;
+  color: #585454;
+  font-size: 20px;
+  line-height: 42px;
 }
 .video-holder {
-  background-color: #a85b33;
+  background-color: #695a56;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 16px;
 }
 .border-video {
   display: flex;
@@ -20,6 +30,12 @@
   justify-content: center;
   align-items: center;
   width: 90%;
-  height: 80%;
   border: 5px solid white;
+  padding: 16px;
+}
+.border-video video{
+  width: 100%;
+}
+.video-wrapper {
+  background-color: #e2e2e2;
 }

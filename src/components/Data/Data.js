@@ -3,28 +3,33 @@ export const navitems=[
         id:1,
         title:"خانه",
         path:"./home",
-        cName:"nav-item"
+        cName:"nav-item",
+        icon:"fa fa-home"
 
     },
     {
         id:2,
         title:"سرویس ها",
         path:"./home",
-        cName:"nav-item"
+        cName:"nav-item",
+        icon:"fa fa-seedling"
+       
 
     },
     {
         id:3,
         title:"مجله و اخبار",
         path:"./home",
-        cName:"nav-item"
+        cName:"nav-item",
+        icon:"fa fa-book"
 
     },
     {
         id:4,
         title:"روشا",
         path:"./home",
-        cName:"nav-item"
+        cName:"fa nav-item",
+        icon:"fa fa-bars"
 
     }
 ]
@@ -61,7 +66,7 @@ export const serviceDropdown=[
         id:5,
         title:"خانه",
         path:"./home",
-        cName:"nav-item"
+        cName:"nav-item",
 
     },
 

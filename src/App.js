@@ -7,7 +7,7 @@ import Sidebar from "./components/Slider/Slider";
 import VideoWrapper from "./components/VideoWrapper/VideoWrapper"
 import GroupSlider from "./components/GroupSlider/GroupSlider"
 import PackageSlider from "./components/PackageSlider/PackageSlider"
-
+import "../src/App.css"
 
 
 function App (){
