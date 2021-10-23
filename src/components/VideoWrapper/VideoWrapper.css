@@ -1,0 +1,25 @@
+.section3 {
+  margin-top: 100px !important;
+}
+.header-video {
+  text-align: center;
+}
+.text-video {
+  text-align: end;
+}
+.video-holder {
+  background-color: #a85b33;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.border-video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+  border: 5px solid white;
+}

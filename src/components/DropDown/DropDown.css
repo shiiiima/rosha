@@ -1,0 +1,18 @@
+.dropdown {
+  position: relative;
+}
+.services-submenu {
+  width: 10rem;
+  position: absolute;
+  list-style: none;
+  text-align: start;
+  z-index: 2;
+  right: 0px;
+}
+.services-submenu li {
+  background-color: white;
+  cursor: pointer;
+}
+.services-submenu.clicked {
+  display: none;
+}
