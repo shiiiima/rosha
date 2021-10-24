@@ -26,7 +26,7 @@ export default function GroupSlider() {
       </div>
       <Swiper
         slidesPerView={4}
-        spaceBetween={50}
+        spaceBetween={30}
         slidesPerGroup={4}
         loop={true}
         loopFillGroupWithBlank={true}
