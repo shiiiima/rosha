@@ -1,49 +1,57 @@
-
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-import imgBG from "../../Assets/images/atyuv.jpg"
+import imgBG from "../../Assets/images/atyuv.jpg";
 
 import "./PackageSlider.css";
-import Zamine from "../../Assets/images/زمینه کارکتر.png"
-import Char from "../../Assets/images/کارکتر.png"
-
-
+import Zamine from "../../Assets/images/زمینه کارکتر.png";
+import Char from "../../Assets/images/کارکتر.png";
 
 // import Swiper core and required modules
-import SwiperCore, {
-  Parallax,Pagination,Navigation
-} from 'swiper';
+import SwiperCore, { Parallax, Pagination, Navigation } from "swiper";
 
 // install Swiper modules
-SwiperCore.use([Parallax,Pagination,Navigation]);
-
+SwiperCore.use([Parallax, Pagination, Navigation]);
 
 export default function PackageSlider() {
-  
-  
-  
   return (
-    <>
-    
-  <Swiper style={{'--swiper-navigation-color': 'red ','--swiper-pagination-color': 'red'}} speed={600} parallax={true} pagination={{
-  "clickable": true
-}} navigation={true} className="mySwiper">
-  <div slot="container-start" className="parallax-bg" style={{"background-image": 'url('+imgBG+')'}} data-swiper-parallax="-23%"></div>
-  <SwiperSlide>
+    <div className="last-slider">
+      <Swiper
+        speed={600}
+        parallax={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        className="mySwiper last-slider"
+      >
+        <div
+          slot="container-start"
+          className="parallax-bg"
+          style={{ "background-image": "url(" + imgBG + ")" }}
+          data-swiper-parallax="-23%"
+        ></div>
+        <SwiperSlide>
           <div className="pakage-inner">
             <div className="details-inner">
-            <div className="images-holder">
-              <div className="img1">
-                <img src={Char} />
+              <div className="images-holder">
+                <div className="img1">
+                  <img src={Char} />
+                </div>
               </div>
-            </div>
-            <div className="content-holder">
-              <span>تست </span>
-              <h2>تست</h2>
-              <p>ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد </p>
-          </div>
+              <div className="content-holder">
+                <span>تست </span>
+                <h2>تست</h2>
+                <p>
+                  ورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                  تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                  کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                  آینده شناخت فراوان جامعه و متخصصان را می طلبد{" "}
+                </p>
+              </div>
             </div>
           </div>
         </SwiperSlide>
@@ -69,15 +77,10 @@ export default function PackageSlider() {
               quis feugiat.</p>
           </div>
         </SwiperSlide> */}
-  </Swiper>
-    </>
-  )
+      </Swiper>
+    </div>
+  );
 }
-
-
-
-
-
 
 // import React, { useRef, useState } from "react";
 // // Import Swiper React components
@@ -90,7 +93,6 @@ export default function PackageSlider() {
 
 // import "./styles.css";
 
-
 // // import Swiper core and required modules
 // import SwiperCore, {
 //   Parallax,Pagination,Navigation
@@ -99,14 +101,11 @@ export default function PackageSlider() {
 // // install Swiper modules
 // SwiperCore.use([Parallax,Pagination,Navigation]);
 
-
 // export default function App() {
-  
-  
-  
+
 //   return (
 //     <>
-    
+
 //   <Swiper style={{'--swiper-navigation-color': '#fff','--swiper-pagination-color': '#fff'}} speed={600} parallax={true} pagination={{
 //   "clickable": true
 // }} navigation={true} className="mySwiper">

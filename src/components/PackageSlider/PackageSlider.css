@@ -57,3 +57,13 @@
     margin:  0;
     width: initial;
 }
+.last-slider .swiper-button-prev {
+    left: 8%;
+}
+.last-slider .swiper-button-next {
+    right: 8%;
+}
+.last-slider .swiper-button-prev:after,.swiper-button-next:after{
+    border-radius: 50% !important;
+    font-size:22px;
+}

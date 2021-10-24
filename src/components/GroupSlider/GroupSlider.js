@@ -1,4 +1,3 @@
-
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,60 +10,56 @@ import img4 from "../../Assets/images/zwcpypz.jpg";
 // import "swiper/css/pagination"
 // import "swiper/css/navigation"
 
-import "./group-slider.css"
+import "./group-slider.css";
 
 // import Swiper core and required modules
-import SwiperCore, {
-  Pagination,Navigation
-} from 'swiper';
+import SwiperCore, { Pagination, Navigation } from "swiper";
 
 // install Swiper modules
-SwiperCore.use([Pagination,Navigation]);
-
+SwiperCore.use([Pagination, Navigation]);
 
 export default function GroupSlider() {
-  
-
-  
   return (
     <div className="group-swiper">
       <div className="silder-title">
-        <h2>
-          خدمات توانمند سازی روشا
-        </h2>
+        <h2>خدمات توانمند سازی روشا</h2>
       </div>
-    <Swiper slidesPerView={4} spaceBetween={30} slidesPerGroup={4} centeredSlides={true} loop={true} loopFillGroupWithBlank={true}  pagination={{
-  "clickable": true
-}} navigation={true} className="mySwiper">
-  <SwiperSlide >
-    <div className="inner">
-      <img className="img-swiper" src={img3}/>
+      <Swiper
+        slidesPerView={4}
+        spaceBetween={50}
+        slidesPerGroup={4}
+        loop={true}
+        loopFillGroupWithBlank={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        className="mySwiper rosha-swiper"
+      >
+        <SwiperSlide>
+          <div className="inner">
+            <img className="img-swiper" src={img3} />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="inner">
+            <img className="img-swiper" src={img3} />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="inner">
+            <img className="img-swiper" src={img3} />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="inner">
+            <img className="img-swiper" src={img3} />
+          </div>
+        </SwiperSlide>
+      </Swiper>
     </div>
-    </SwiperSlide>
-    <SwiperSlide>
-      <div className="inner">
-      <img className="img-swiper" src={img3}/>
-    </div>
-    </SwiperSlide>
-    <SwiperSlide>
-    <div className="inner">
-      <img className="img-swiper" src={img3}/>
-    </div>
-    </SwiperSlide>
-    <SwiperSlide>
-    <div className="inner">
-      <img className="img-swiper" src={img3}/>
-    </div>
-    </SwiperSlide>
-  </Swiper>
-    </div>
-  )
+  );
 }
-
-
-
-
-
 
 // import React, { useRef, useState } from "react";
 // // Import Swiper React components
@@ -76,7 +71,6 @@ export default function GroupSlider() {
 
 // import "./styles.css";
 
-
 // // import Swiper core and required modules
 // import SwiperCore, {
 //   Pagination
@@ -85,11 +79,8 @@ export default function GroupSlider() {
 // // install Swiper modules
 // SwiperCore.use([Pagination]);
 
-
 // export default function App() {
-  
-  
-  
+
 //   return (
 //     <>
 //     <Swiper slidesPerView={4} spaceBetween={30} centeredSlides={true} pagination={{
