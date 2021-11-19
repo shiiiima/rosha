@@ -51,3 +51,13 @@ line-height: 0;
     
     
 }
+.register-box{
+    overflow: hidden;
+}
+.register-box button{
+    height:48px;
+}
+.register-box  input{
+    background-color: #fff;
+    direction: ltr;
+}
