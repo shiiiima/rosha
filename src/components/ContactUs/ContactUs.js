@@ -1,7 +1,7 @@
 import React from "react";
 import image from "../../Assets/images/تماس با ما 1.png";
 import Form from "../Form/Form";
-import MapContainer from "../Google.js"
+import GoogleMapComponent from "./Google.js"
 
 import "./ContactUs.css"
 function ContactUs(props) {
@@ -19,16 +19,16 @@ function ContactUs(props) {
 
                 </p>
             </div>
-            <div className="info-contactUs">
+            <div className="info-holder1">
                 <h4>تماس با ما</h4>
+                <div className="line"></div>
                 <p> برای رزرو مشاوره و سوالات خود، با ما تماس بگیرید 
 </p>
             </div>
-            <div className="title-form">
-                <h4>فرم تماس</h4>
-                <div className="line"></div>
-            <p>برای این که با شما تماس بگیریم لطفا فرم زیر را پر کنید</p>
-         </div>
+
+  
+            
+            
             <Form/>
                 
     

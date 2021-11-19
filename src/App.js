@@ -29,8 +29,8 @@ function App (){
       </Switch>
       </Router>
       {/* <HomePage/> */}
-      <Questions/>
-
+      {/* <Questions/> */}
+<ContactUs/>
    <RegisterMail/>
       {/* <Gallery/> */}
       <Footer/>

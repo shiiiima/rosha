@@ -6,8 +6,13 @@ import "./Form.css"
 function Form() {
     return (
         <>
-
-        <div className="form-holder">
+          
+            <div className="form-holder">
+            <div className="info-header2">
+                <h4>فرم تماس</h4>
+                <div className="line1"></div>
+            <p>برای این که با شما تماس بگیریم لطفا فرم زیر را پر کنید</p>
+            </div>
 
              <form>
             <Grid container className="textfield-holder">

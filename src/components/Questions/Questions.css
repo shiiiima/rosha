@@ -22,11 +22,14 @@
  justify-content: center;
  align-items: center;
 }
-.info-holder1{
+.info-holder2{
     width: 70%;
     text-align: center;
 
 }
-.line{
+.line1{
     margin-right: 46%;
+    width: 100px;
+    height: 5px;
+    background-color: #6AA3AE;
 }
