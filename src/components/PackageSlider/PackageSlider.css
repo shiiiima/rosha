@@ -66,4 +66,5 @@
 .last-slider .swiper-button-prev:after,.swiper-button-next:after{
     border-radius: 50% !important;
     font-size:22px;
+    background-color:#695a56 !important;
 }

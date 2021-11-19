@@ -75,6 +75,48 @@
 //     </div>
 //   );
 // }
+export default function GroupSlider() {
+  return (
+    <div className="group-swiper">
+      <div className="silder-title">
+        <h2>خدمات توانمند سازی روشا</h2>
+      </div>
+      <Swiper
+        slidesPerView={4}
+        spaceBetween={30}
+        slidesPerGroup={4}
+        loop={true}
+        loopFillGroupWithBlank={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        className="mySwiper rosha-swiper"
+      >
+        <SwiperSlide>
+          <div className="inner">
+            <img className="img-swiper" src={img3} />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="inner">
+            <img className="img-swiper" src={img3} />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="inner">
+            <img className="img-swiper" src={img3} />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="inner">
+            <img className="img-swiper" src={img3} />
+          </div>
+        </SwiperSlide>
+      </Swiper>
+    </div>
+  );
+}
 
 // import React, { useRef, useState } from "react";
 // // Import Swiper React components
