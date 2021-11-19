@@ -1,0 +1,52 @@
+.seminar-info-holder{
+    background-color: #E2E2E2;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+
+}
+.seminar-info{
+    display: flex;
+    justify-content: space-around;
+    background-color:rgba(97, 96, 101, 0.3);
+
+   
+}
+.btn-info-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-seminar{
+    background-color:  rgba(83, 124, 130, 1);
+    color: white
+    ;
+}
+.card{
+    background-color: rgba(254, 254, 254, 1);
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(37, 37, 37, 0.2);
+   
+
+}
+.seminar-about{
+    position: relative;
+}
+.bg-img-seminar-about{
+    background: linear-gradient(263.9deg, rgba(79, 135, 148, 0.76) 14.67%, rgba(97, 96, 101, 0.8) 89.87%);
+
+   
+}
+.seminar-about-holder{
+    position: absolute;
+}
+.img-portrate-seminar-about{
+  
+
+    top: -100!important;
+}
+.text-seminar-about{
+
+    top: 0;
+  
+
+} 

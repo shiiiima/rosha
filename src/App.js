@@ -8,8 +8,17 @@ import VideoWrapper from "./components/VideoWrapper/VideoWrapper"
 import GroupSlider from "./components/GroupSlider/GroupSlider"
 import PackageSlider from "./components/PackageSlider/PackageSlider"
 import "../src/App.css"
+import Gallery from "./components/Gallery/Gallery";
+import Footer from "./components/Footer/Footer";
+import HomePage from "../src/components/HomePage"
+import VerticalSlider from "./components/VerticalSlider/VerticalSlider"
+import Rolls from "./components/rolls/Rolls";
+import RegisterMail from "./components/RegisterMail/RegisterMail";
+import ContactUs from "./components/ContactUs/ContactUs";
+import AboutUs from "./components/AboutUs/AboutUs";
 
-
+import Seminars from "./components/Seminars/Seminars";
+import Questions from "./components/Questions/Questions";
 function App (){
   return(
 <>
@@ -19,11 +28,12 @@ function App (){
         <Route></Route>
       </Switch>
       </Router>
-      <Sidebar/>
-      <CardWrapper/>
-      <VideoWrapper/>
-      <GroupSlider/>
-      <PackageSlider/>
+      {/* <HomePage/> */}
+      <Questions/>
+
+   <RegisterMail/>
+      {/* <Gallery/> */}
+      <Footer/>
 
 
 

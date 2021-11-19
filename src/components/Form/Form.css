@@ -1,0 +1,31 @@
+.form-holder{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+form{
+    width: 80%;
+}
+.input-form{
+    width: 100%;
+
+    margin: 30px 50px;
+}
+.textfield-holder{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+.btn-send{
+    float: left;
+    border-radius: 10px!important;
+    height: 50px;
+    width: 130px;
+
+    background-color: #204951!important;
+    color: white!important;
+}

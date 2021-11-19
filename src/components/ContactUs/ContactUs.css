@@ -1,0 +1,21 @@
+.img-holder {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img-roll {
+    filter: brightness(40%);
+    width: 100%;
+  }
+  .head-roll {
+    position: absolute;
+    color: white;
+    font-size: 64px;
+  }
+  .line{
+      width: 100px;
+      height: 5px;
+      background-color: #6AA3AE;
+      }

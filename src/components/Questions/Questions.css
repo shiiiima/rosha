@@ -1,0 +1,32 @@
+.accaredon-question{
+    width: 80%;
+
+}
+.accaredon-question-holder{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+#panel1a-header{
+    background-color: #F6F6F6;
+    margin: 10px 0;
+
+}
+.new-question{
+ width: 100%;
+ display: flex;
+ 
+ justify-content: center;
+ align-items: center;
+}
+.info-holder1{
+    width: 70%;
+    text-align: center;
+
+}
+.line{
+    margin-right: 46%;
+}

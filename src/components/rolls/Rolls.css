@@ -1,0 +1,51 @@
+.img-holder {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-roll {
+  filter: brightness(40%);
+  width: 100%;
+}
+.head-roll {
+  position: absolute;
+  color: white;
+  font-size: 64px;
+}
+.title-rolls {
+  margin: 50px 60px;
+}
+.lists-roll {
+  list-style-type: square;
+}
+.list-roll::marker {
+  color: #73bf44;
+}
+.title-rolls2 {
+  background-color: #f3f3f3;
+}
+.lists-roll2 {
+  list-style-type: square;
+}
+.list-roll2::marker {
+  color: #73bf44;
+}
+.img-rolls img {
+  width: 380px;
+  height: 380px;
+}
+.title-rolls3 {
+  background-color: #e2e2e2;
+  padding: 100px 150px;
+}
+.list-roll3 {
+  display: flex;
+}
+
+.icon-holder {
+  width: 60px;
+  height: 60px;
+  background-color: #6aa3ae;
+}

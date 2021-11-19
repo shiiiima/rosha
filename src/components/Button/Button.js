@@ -4,7 +4,8 @@ import Button from "@mui/material/Button"
 function BtnSignIn(){
     return(
 <Link to="signup">
-    <Button className="btn-signin" varianet="contained">signin</Button>
+    <Button className="btn-signin" varianet="contained">ورود|
+ثبت نام</Button>
 </Link>
     )
 }

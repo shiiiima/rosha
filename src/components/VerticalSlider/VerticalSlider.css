@@ -1,0 +1,40 @@
+.vertical-slider {
+  background-color: #4f8894;
+  height: 200px;
+  width: 100%;
+}
+.texts-holder {
+  margin-right: 20px;
+  width: 80%;
+}
+.header-vertical {
+  color: white;
+  text-align: end;
+  font-weight: 900;
+}
+.text-vertical {
+  color: white;
+  text-align: end;
+  font-weight: 600;
+  width: 100% !important;
+}
+.date-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.date {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border: 5px solid white;
+
+  color: white;
+}
+.date h3 {
+  font-size: 16px;
+  font-weight: 900;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 22px;
+}

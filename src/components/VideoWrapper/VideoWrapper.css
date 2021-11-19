@@ -1,11 +1,11 @@
 .section3 {
   margin-top: 100px !important;
-  height:  450px;
+  height: 450px;
 }
 .header-video {
   text-align: right;
-  width: 70% ;
-  margin:  0 auto;
+
+  margin: 0 auto;
   color: #585454;
   margin-bottom: 30px;
   font-size: 32px;
@@ -33,9 +33,12 @@
   border: 5px solid white;
   padding: 16px;
 }
-.border-video video{
+.border-video video {
   width: 100%;
 }
 .video-wrapper {
   background-color: #e2e2e2;
+  text-align: end;
+  padding: 15px 36px;
+  margin: 0 !important;
 }

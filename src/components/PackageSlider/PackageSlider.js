@@ -22,6 +22,7 @@ export default function PackageSlider() {
         parallax={true}
         pagination={{
           clickable: true,
+          
         }}
         navigation={true}
         className="mySwiper last-slider"

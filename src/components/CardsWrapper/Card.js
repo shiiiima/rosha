@@ -3,7 +3,7 @@ import "./Card.css"
 function Card ({item}){
    const {text,images}=item
 
-    console.log(text);
+ 
 
     
     return(

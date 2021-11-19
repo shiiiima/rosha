@@ -1,10 +1,18 @@
 export const navitems=[
     {
-        id:1,
-        title:"خانه",
+        id:4,
+        title:"روشا",
+        path:"./home",
+        cName:"fa nav-item",
+        icon:"fa fa-bars"
+
+    },
+    {
+        id:3,
+        title:"مجله و اخبار",
         path:"./home",
         cName:"nav-item",
-        icon:"fa fa-home"
+        icon:"fa fa-book"
 
     },
     {
@@ -17,21 +25,16 @@ export const navitems=[
 
     },
     {
-        id:3,
-        title:"مجله و اخبار",
+        id:1,
+        title:"خانه",
         path:"./home",
         cName:"nav-item",
-        icon:"fa fa-book"
+        icon:"fa fa-home"
 
     },
-    {
-        id:4,
-        title:"روشا",
-        path:"./home",
-        cName:"fa nav-item",
-        icon:"fa fa-bars"
 
-    }
+
+  
 ]
 export const serviceDropdown=[
     {

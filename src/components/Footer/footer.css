@@ -1,0 +1,40 @@
+.footer-holder {
+  background-color: #695a56;
+}
+.footer-holder img {
+  width: 150px;
+  height: 150px;
+}
+.footer-logos-holder {
+  width: 400px;
+  height: 350px;
+  text-align: center;
+}
+.header-footer {
+  color: white;
+  text-align: center;
+}
+.text-footer {
+  color: white;
+  text-align: end;
+}
+.img-logo-footer {
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+.img-logo-footer img {
+  width: 100% !important;
+  height: 100% !important;
+  color: white;
+}
+.social-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logos {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
