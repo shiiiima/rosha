@@ -4,12 +4,17 @@ import Seminars from "./Seminars";
 import "./Seminar.css"
 function Seminar({item}) {
     console.log(item)
-    const { title, text, date,goal,price }=item
+    const { title, text, date,goal,price,img }=item
    
 
     return (
         <>
-            <div container className="seminar-info-holder">
+            <Grid container className="seminars" >
+                <Grid item xs={3} className="img-seminar-holder">
+                <img src={img}/>
+                </Grid>
+                <Grid item xs={9}>
+                <div container className="seminar-info-holder">
             <h4>{title}</h4>
             <p>{text}</p>
      
@@ -27,6 +32,9 @@ function Seminar({item}) {
                </Grid>
        
            </div>
+                </Grid>
+            </Grid>
+           
         </>
     )
 }

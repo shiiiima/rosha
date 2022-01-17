@@ -18,6 +18,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 
 import Seminars from "./components/Seminars/Seminars";
 import Questions from "./components/Questions/Questions";
+import FormContact from "./components/Form/Form";
 function App() {
   return (
     <>
@@ -28,15 +29,13 @@ function App() {
         </Switch>
       </Router>
       {/* <HomePage/> */}
-      {/* <Questions/> */}
-<<<<<<< HEAD
-<ContactUs/>
-   <RegisterMail/>
-=======
+      {/* <Questions/>  */}
       {/* <Rolls /> */}
-      <AboutUs />
-      <RegisterMail />
->>>>>>> dad30d89c3037daf284ab09a961eb5a5bf7cb3e8
+      {/* <Seminars /> */}
+      <ContactUs />
+      {/* <AboutUs />
+      // <RegisterMail /> */}
+      {/* // <FormContact /> */}
       {/* <Gallery/> */}
       <Footer />
     </>

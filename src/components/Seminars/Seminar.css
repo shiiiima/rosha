@@ -1,52 +1,103 @@
 .seminar-info-holder{
     background-color: #E2E2E2;
-    padding: 10px 20px;
+   padding:30px 90px 0px 30px;
+
     margin-bottom: 20px;
+    border-radius: 10px;
+    height: 300px;
 
 }
 .seminar-info{
     display: flex;
     justify-content: space-around;
     background-color:rgba(97, 96, 101, 0.3);
-
+border-radius: 10px;
    
 }
 .btn-info-holder{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .btn-seminar{
-    background-color:  rgba(83, 124, 130, 1);
-    color: white
-    ;
+    background-color:  rgba(83, 124, 130, 1)!important;
+    color: white!important;
+    margin-right: 20px !important;
+    width: 150px;
+    height: 50px;
+    
+    
 }
 .card{
     background-color: rgba(254, 254, 254, 1);
     border-radius: 10px;
     box-shadow: 0px 5px 20px rgba(37, 37, 37, 0.2);
+    z-index: 3;
    
 
 }
 .seminar-about{
     position: relative;
+
 }
 .bg-img-seminar-about{
     background: linear-gradient(263.9deg, rgba(79, 135, 148, 0.76) 14.67%, rgba(97, 96, 101, 0.8) 89.87%);
+    width: 100%;
 
    
 }
 .seminar-about-holder{
     position: absolute;
+    top: 0;
 }
 .img-portrate-seminar-about{
   
 
-    top: -100!important;
+   margin-top: -63px!important;
 }
 .text-seminar-about{
-
-    top: 0;
+color: white;
+    
+    text-align: center;
+    margin-top: 100px;
+    font-weight: 700;
+    font-size: 20px;
   
 
 } 
+.seminars-holder{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px 0;
+
+    
+}
+.seminars{
+    width: 80%!important;
+
+    
+}
+.img-seminar-holder{
+    margin-top: 26px!important;
+    z-index: 2;
+}
+.img-seminar-holder img{
+    width: 400px;
+    height: 250px;
+}
+.border-cardes{
+    background-color:rgba(79, 135, 148, 1);
+    width: 250px;
+    height: 15px;
+   
+    margin-right: 154px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-top: -10px;
+    z-index: 1;
+    margin-bottom: 50px;
+
+}

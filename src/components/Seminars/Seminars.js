@@ -26,7 +26,7 @@ function Seminars() {
             date: "1400/3/9",
             goal: "کلیه والدین",
             price:"1,000,000",
-            img:""
+            img:img1
         },
         {
             title: "وبینار استعدادیابی کارآفرینی",
@@ -34,7 +34,7 @@ function Seminars() {
             date: "1400/3/3",
             goal: "کلیه والدین",
             price:"1,000,000",
-            img:""
+            img:img1
         },
         
 
@@ -64,15 +64,17 @@ function Seminars() {
             </div>
             {info.map((item ,index) => {
                 return (
-                    <Grid container >
-                                                <Grid item xs={8} md={3}>
-                            <img src={item.img}/>
-                        </Grid>
-                        <Grid item xs={12} md={9}>
-                        <Seminar item={item} />
-                        </Grid>
+                    // <Grid container className="seminars" >
+                    //                             <Grid item xs={8} md={3}>
+                    //         <img src={item.img}/>
+                    //     </Grid>
+                    //     <Grid item xs={12} md={9}>
+                    <div className="seminars-holder">
+                           <Seminar item={item} />
+                     </div>
+                //         </Grid>
 
-                   </Grid>
+                //    </Grid>
                    
                     
                 
@@ -86,6 +88,7 @@ function Seminars() {
                     return (
                         <Grid item xs={12} md={4}>
                             <SeminarCard card={card} />
+                            <div className="border-cardes"></div>
                         </Grid>
                     )
                 })}

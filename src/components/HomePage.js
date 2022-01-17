@@ -13,7 +13,7 @@ function HomePage(){
         <Sidebar/>
         <VerticalSlider/>
         <CardWrapper/>
-        <VideoWrapper/>
+        {/* <VideoWrapper/> */}
         <GroupSlider/>
         <PackageSlider/>
  </>

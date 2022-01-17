@@ -6,3 +6,63 @@ text-align: center;
 color: white;
 
 }
+.items-about-us p{
+    font-weight: 500;
+font-size: 20px;
+
+/* identical to box height */
+
+
+}
+.text-about-us{
+    width: 100%;
+ display: flex;
+ justify-content: center;
+}
+.text-about-us p{
+    width: 80%;
+    margin: 50px 0;
+}
+.about-us-info{
+    margin: 50px ;
+}
+
+.slider-card-aboutus{
+    width: 312px;
+    height: 164px;
+    background: #FEFEFE;
+box-shadow: 0px 10px 10px rgba(37, 37, 37, 0.2);
+border-radius: 10px;
+padding:30px 10px ;
+    
+}
+.slider-card-aboutus p{
+
+    text-align: center;
+    font-weight: normal;
+font-size: 15px;
+}
+#about-us-slider{
+    left: -100px;
+    margin-top: 160px;
+    margin-bottom: 50px;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: rgba(79, 135, 148, 1);
+  
+}
+.swiper-pagination-bullet{
+    width: 16px;
+    height: 16px;
+}
+.chesmandaz-about{
+    margin-top: 100px;
+    background-color: rgba(226, 226, 226, 1);
+}
+.chesmandaz-about img{
+    width: 530;
+    height: 530;
+    margin-top: -100px;
+    margin-right: 100px;
+}
