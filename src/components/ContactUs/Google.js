@@ -3,8 +3,8 @@ import React, { Component } from "react";
 import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
 
 const customizeMap = {
-  width: "100%",
-  height: "100%",
+  width: "50%",
+  height: "50%",
 };
 
 class GoogleMapComponent extends React.Component {
@@ -36,7 +36,7 @@ class GoogleMapComponent extends React.Component {
       <Map
         google={this.props.google}
         style={customizeMap}
-        zoom={6}
+        zoom={10}
         initialCenter={{
           lat: 9.96233,
           lng: 49.80404,
