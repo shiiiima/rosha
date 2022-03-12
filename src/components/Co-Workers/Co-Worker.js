@@ -1,15 +1,10 @@
 import React from "react";
-import GoogleMapComponents from "./Google";
-import img1 from "../../Assets/images/تماس با ما 1 (1).png";
-import "./ContactUs.css";
-import FormContact from "../Form/Form";
-import { Grid } from "@mui/material";
-function ContactUs() {
+function CoWorkers() {
   return (
-    <div>
+    <>
       <div className="img-holder">
-        <img src={img1} className="img-roll" />
-        <h3 className="head-roll"> ارتباط ما</h3>
+        <img src={image} className="img-roll" />
+        <h3 className="head-roll"> درباره ما</h3>
       </div>
       <div className="text-about-us">
         <p>
@@ -37,44 +32,7 @@ function ContactUs() {
           نگرش عمیق، توسعه و موفقیت نوآوران را فراهم آورده است..
         </p>
       </div>
-      <Grid container className="map-wrapper">
-        <Grid item className="">
-          <div className="title-map">
-            <h3>مرکز رویش و شکوفایی استعداد</h3>
-            <div className="line"></div>
-            <p>
-              مرکز رویش و شکوفایی استعداد روشا از سال 1394 با کسب مجوز های لازم
-              در حوزه استعدادیابی و استعدادپروری کودک و نوجوان شروع به فعالیت
-              های علمی و پژوهشی و ایجاد زیرساخت های لازم و انجام طرح های سراسری
-              کرد، با توجه به توسعه فعالیت های این مجموعه از فروردین سال 1400 با
-              رویکردی جدید و استقرار در مرکز نوآوری دانشکده روانشناسی و علوم
-              تربیتی دانشگاه تهران، با حضور معاونت علمی و فناوری ریاست جمهوری
-              جناب آقای دکتر ستاری، این فعالیت ها در حوزه های تخصصی ارزیابی و
-              غربالگری، کشف استعداد، پرورش استعداد و شتابدهی و حمایت از
-              استعدادهای کودکان و نوجوانان متناظر با اهداف مرکز نوآوری آغاز به
-              کار نمود. مرکز استعدادیابی روشا با حمای
-            </p>
-          </div>
-          <GoogleMapComponents />
-        </Grid>
-      </Grid>
-      <Grid container className="form-holder">
-        <Grid item>
-          <div className="info-holder">
-            <h3>ارتباط با ما</h3>
-            <div className="line"></div>
-            <p>
-              {" "}
-              مرکز رویش و شکوفایی استعداد روشا از سال 1394 با کسب مجوز های لازم
-              در حوزه استعدادیابی و استعدادپروری کودک و نوجوان شروع به فعالیت
-              های علمی و پژوهشی و ایجاد زیرساخت های لازم و انجام طرح های سراسری
-              کرد، با توجه به توسعه فعالیت های این مجموعه از فروردین سال 1400 با
-            </p>
-          </div>
-          <FormContact />
-        </Grid>
-      </Grid>
-    </div>
+    </>
   );
 }
-export default ContactUs;
+export default CoWorkers;

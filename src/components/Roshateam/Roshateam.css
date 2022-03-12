@@ -1,0 +1,30 @@
+.worker-wrapper{
+    display: flex;
+    align-items: center;
+ 
+
+}
+.worker-wrapper-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 40px;
+}
+.blue-img{
+    height: 100px;
+    width: 15px;
+    background-color: #6AA3AE;
+}
+.roshasubteam-holder{
+    padding: 20px 60px;
+ 
+}
+.roshasubteam-item-holder{
+    padding:20px ;
+}
+.title-roshasubteam{
+  margin-right: 50%;
+}
+.seminar-about{
+    margin-top: 50px;
+}

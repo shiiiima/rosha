@@ -1,0 +1,23 @@
+.items-rosha-services{
+
+    padding: 30px;
+}
+.info-holder1{
+    margin-left: 50px;
+}
+.right-side-rosha-services{
+    background-color: #695A55;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.img-holder-services img{
+    width: 500px;
+    height: 300px;
+
+    margin-left: -50px!important;
+}
+.left-side-rosha-services{
+    padding-right: 100px;
+}

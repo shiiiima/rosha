@@ -1,14 +1,12 @@
-import React, { useEffect, useState } from "react";
-import "./AboutUs.css";
-import CountUp from "react-countup";
-import image from "../../Assets/images/unsplash_KdeqA3aTnBY (1).png";
-import img1 from "../../Assets/images/unsplash_-uHVRvDr7pg.png";
-import img2 from "../../Assets/images/unsplash_Jk3u514GJes (1).png";
-import { Grid } from "@mui/material";
-import SliderAboutUs from "./SliderAboutUs";
+import React, { useState, useEffect } from "react";
+import img from "../../Assets/images/unsplash_F8t2VGnI47I (1).png";
 import axios from "axios";
-import SliderWhyRosha from "./SliderWhyRosha";
-function AboutUs() {
+import { Grid } from "@mui/material";
+import CountUp from "react-countup";
+import "./Service.css";
+import image from "../../Assets/images/unsplash_g1Kr4Ozfoac.png";
+import Button from "@mui/material/Button";
+function Service() {
   const [talent_scout_count, settalent_scout_count] = useState(0);
 
   const [council_count, setcouncil_count] = useState(0);
@@ -35,8 +33,8 @@ function AboutUs() {
   return (
     <>
       <div className="img-holder">
-        <img src={image} className="img-roll" />
-        <h3 className="head-roll"> درباره ما</h3>
+        <img src={img} className="img-roll" />
+        <h3 className="head-roll"> خدمات ما</h3>
       </div>
       <div className="text-about-us">
         <p>
@@ -82,34 +80,10 @@ function AboutUs() {
           <p> نوع خدمت در زمینه استعدادپروری و شتابدهی استعداد</p>
         </Grid> */}
       </Grid>
-      <Grid container className="why-rosha">
-        <Grid item>
-          <div className="why-rosha-holder">
-            <h4>چرا روشا؟</h4>
-            <div className="line"></div>
-          </div>
-        </Grid>
-
-        <Grid item className="video-why-rosha-wrapper">
-          <div className="video-why-rosha">
-            <img src={img1} />
-            <p>رویش و شکوفایی استعداد روشا</p>
-          </div>
-          <div className="video-why-rosha">
-            <img src={img1} />
-            <p>رویش و شکوفایی استعداد روشا</p>
-          </div>
-          <div className="video-why-rosha">
-            <img src={img1} />
-            <p>رویش و شکوفایی استعداد روشا</p>
-          </div>
-        </Grid>
-      </Grid>
-      <div className="blue-line"></div>
-      <Grid container className="about-us-info">
-        <Grid item xs={12} md={6}>
+      <Grid container className="items-rosha-services">
+        <Grid item md={6} xs={12}>
           <div className="info-holder1">
-            <h4>درباره ما</h4>
+            <h4> لورم ایپسوم</h4>
             <div className="line"></div>
             <p>
               {" "}
@@ -122,32 +96,83 @@ function AboutUs() {
               خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. */
             </p>
           </div>
-          <SliderAboutUs />
         </Grid>
-        <Grid item xs={12} md={6}>
-          <img src={img1} />
+        <Grid item md={6} xs={12}>
+          <Grid container>
+            <Grid item xs={12} md={6}>
+              <div className="title">
+                <i></i>
+                <h4>لورم ایپسوم</h4>
+              </div>
+              <p>
+                نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+                شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+              </p>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <div className="title">
+                <i></i>
+                <h4>لورم ایپسوم</h4>
+              </div>
+              <p>
+                نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+                شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+              </p>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <div className="title">
+                <i></i>
+                <h4>لورم ایپسوم</h4>
+              </div>
+              <p>
+                نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+                شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+              </p>
+            </Grid>
+            <Grid item xs={12} md={6}>
+              <div className="title">
+                <i></i>
+                <h4>لورم ایپسوم</h4>
+              </div>
+              <p>
+                نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+                شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+              </p>
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
-      <Grid container className="chesmandaz-about">
-        <Grid item xs={6} md={6} className="">
-          <img src={img2} />
+      <Grid container>
+        <Grid item xs={12} md={4} className="right-side-rosha-services">
+          <div className="img-holder-services">
+            <img src={image} />
+          </div>
         </Grid>
-        <Grid item xs={12} md={6} className="info-holder">
-          <h4> چشم انداز</h4>
-          <div className="line"></div>
-          <p>
-            {" "}
-            نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-            متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
-            شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
-            ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال
-            و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها
-            شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و
-            فرهنگ پیشرو در زبان فارسی ایجاد کرد. */
-          </p>
+        <Grid item xs={12} md={8} className="left-side-rosha-services">
+          <div className="info-holder1">
+            <h4> لورم ایپسوم</h4>
+            <div className="line"></div>
+            <p>
+              {" "}
+              نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+              شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+              ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته،
+              حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+              افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+              خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. */
+            </p>
+          </div>
+          <Button variant="contained" className="btn-send" type="submit">
+            کلیک
+          </Button>
         </Grid>
       </Grid>
     </>
   );
 }
-export default AboutUs;
+export default Service;

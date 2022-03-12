@@ -1,42 +1,17 @@
-import React, { useEffect, useState } from "react";
-import "./AboutUs.css";
-import CountUp from "react-countup";
-import image from "../../Assets/images/unsplash_KdeqA3aTnBY (1).png";
-import img1 from "../../Assets/images/unsplash_-uHVRvDr7pg.png";
-import img2 from "../../Assets/images/unsplash_Jk3u514GJes (1).png";
+import React from "react";
+import image from "../../Assets/images/unsplash_F8t2VGnI47I (1).png";
 import { Grid } from "@mui/material";
-import SliderAboutUs from "./SliderAboutUs";
-import axios from "axios";
-import SliderWhyRosha from "./SliderWhyRosha";
-function AboutUs() {
-  const [talent_scout_count, settalent_scout_count] = useState(0);
+import img1 from "../../Assets/images/unsplash_Wh9ZC4727e4.png";
+import "./Branches.css";
+import FormContact from "../Form/Form";
 
-  const [council_count, setcouncil_count] = useState(0);
-  const [items_count, setitems_count] = useState(0);
-  function counts() {
-    axios.get("http://localhost:8000/api/aboutus").then((res) => {
-      settalent_scout_count(res.data.talent_scout_count);
-
-      setcouncil_count(res.data.council_count);
-      setitems_count(res.data.items_count);
-      console.log(
-        "talent_scout_count: ",
-        talent_scout_count,
-        "council_count ",
-        council_count,
-        "items_count",
-        items_count
-      );
-    });
-  }
-  useEffect(() => {
-    counts();
-  }, []);
+import Button from "@mui/material/Button";
+function Branches() {
   return (
     <>
       <div className="img-holder">
         <img src={image} className="img-roll" />
-        <h3 className="head-roll"> درباره ما</h3>
+        <h3 className="head-roll"> نمایندگی های ما</h3>
       </div>
       <div className="text-about-us">
         <p>
@@ -64,52 +39,15 @@ function AboutUs() {
           نگرش عمیق، توسعه و موفقیت نوآوران را فراهم آورده است..
         </p>
       </div>
-      <Grid container className="numbers-about-us">
-        <Grid item xs={6} md={3} className="items-about-us">
-          <CountUp end={talent_scout_count} duration={2} />
-          <p>آزمون اجرا شده</p>
-        </Grid>
-        <Grid item xs={6} md={3} className="items-about-us">
-          <CountUp end={council_count} duration={5} />
-          <p>ساعت مشاوره تخصصی</p>
-        </Grid>
-        <Grid item xs={6} md={3} className="items-about-us">
-          <CountUp end={items_count} duration={5} />
-          <p> عضو آکادمی استعداد</p>
-        </Grid>
-        {/* <Grid item xs={6} md={3} className="items-about-us">
-          <CountUp end={600} duration={10} />
-          <p> نوع خدمت در زمینه استعدادپروری و شتابدهی استعداد</p>
-        </Grid> */}
-      </Grid>
-      <Grid container className="why-rosha">
-        <Grid item>
-          <div className="why-rosha-holder">
-            <h4>چرا روشا؟</h4>
-            <div className="line"></div>
-          </div>
-        </Grid>
-
-        <Grid item className="video-why-rosha-wrapper">
-          <div className="video-why-rosha">
+      <Grid container>
+        <Grid item xs={12} md={4} className="right-side-rosha-services">
+          <div className="img-holder-services">
             <img src={img1} />
-            <p>رویش و شکوفایی استعداد روشا</p>
-          </div>
-          <div className="video-why-rosha">
-            <img src={img1} />
-            <p>رویش و شکوفایی استعداد روشا</p>
-          </div>
-          <div className="video-why-rosha">
-            <img src={img1} />
-            <p>رویش و شکوفایی استعداد روشا</p>
           </div>
         </Grid>
-      </Grid>
-      <div className="blue-line"></div>
-      <Grid container className="about-us-info">
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={8} className="left-side-rosha-services">
           <div className="info-holder1">
-            <h4>درباره ما</h4>
+            <h4>مقالات روشا</h4>
             <div className="line"></div>
             <p>
               {" "}
@@ -122,32 +60,32 @@ function AboutUs() {
               خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. */
             </p>
           </div>
-          <SliderAboutUs />
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <img src={img1} />
+          <Button variant="contained" className="btn-send" type="submit">
+            کلیک
+          </Button>
         </Grid>
       </Grid>
-      <Grid container className="chesmandaz-about">
-        <Grid item xs={6} md={6} className="">
-          <img src={img2} />
-        </Grid>
-        <Grid item xs={12} md={6} className="info-holder">
-          <h4> چشم انداز</h4>
-          <div className="line"></div>
-          <p>
-            {" "}
-            نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
-            متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
-            شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
-            ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال
-            و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها
-            شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و
-            فرهنگ پیشرو در زبان فارسی ایجاد کرد. */
-          </p>
+      <Grid container className="form-holder">
+        <Grid item>
+          <div className="info-holder">
+            <h3>ارتباط با ما</h3>
+            <div className="line"></div>
+            <p>
+              {" "}
+              مرکز رویش و شکوفایی استعداد روشا از سال 1394 با کسب مجوز های لازم
+              در حوزه استعدادیابی و استعدادپروری کودک و نوجوان شروع به فعالیت
+              های علمی و پژوهشی و ایجاد زیرساخت های لازم و انجام طرح های سراسری
+              م در حوزه استعدادیابی و استعدادپروری کودک و نوجوان شروع به فعالیت
+              های علمی و پژوهشی و ایجاد زیرساخت های لازم و انجام طرح های سراسری
+              کرد، با توجه به توسعه فعالیت های این مجموعه از فروردین سال 1400
+              باکرد، با توجه به توسعه فعالیت های این مجموعه از فروردین سال 1400
+              با
+            </p>
+          </div>
+          <FormContact />
         </Grid>
       </Grid>
     </>
   );
 }
-export default AboutUs;
+export default Branches;

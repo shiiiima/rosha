@@ -1,5 +1,5 @@
-import { Grid } from "@mui/material";
-import React from "react";
+import { Grid, TextField } from "@mui/material";
+import React, { Component, useEffect } from "react";
 
 import Button from "@mui/material/Button";
 
@@ -10,55 +10,46 @@ import axios from "axios";
 import InputField from "../Basics/InputField";
 
 const initialValues = {
-  name: "",
-  lastname: "",
+  first_name: "",
+  last_name: "",
   email: "",
-  comment: "",
+  phone: "",
+  note: "",
 };
 
-// const validate= (values) => {
-//     let errors = {};
-//     if (!values.name) {
-//       errors.name = "Required";
-//     }
-//     if (!values.lastname) {
-//       errors.lastname = "Required";
-//     }
-//     if (!values.email) {
-//       errors.email = "Required";
-//     }
-//     else if (!/^[A-Z0-9._%+-]+@[A-Z0-0.-] +\.[A-Z]{2,4}$/i.test(values.email)) {
-//         errors.email="invalid email format"
-//       }
-//     if (!values.comment) {
-//       errors.comment = "Required";
-//     }
-//     return errors;
-// },
 const validationSchema = yup.object({
-  name: yup.string().required("Required"),
-  lastname: yup.string().required("Required"),
+  first_name: yup.string().required("Required"),
+  last_name: yup.string().required("Required"),
   email: yup.string().email("invalid email format").required("Required"),
-  comment: yup.string().required("Required"),
+  note: yup.string().required("Required"),
 });
 
 function FormContact() {
-  //   const formik = useFormik({
-  //     initialValues,
-  //     onSubmit,
-  //     validate,
-  //   });
+  function PostData(valuesFormik) {
+    axios
+      .post(
+        "http://localhost:8000/api/contact",
+        valuesFormik,
+        "{{ csrf_token() }}"
+      )
+      .then((res) => {
+        console.log("success", res);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  }
+  useEffect(() => {
+    PostData();
+  }, []);
+
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {
-        actions.preventDefault();
-        
+        PostData(values);
       }}
-      validateOnChange={false}
-      validateOnBlur={false}
-      validateOnMount
     >
       {/* <div className="form-holder">
         <div className="info-header2">
@@ -73,9 +64,59 @@ function FormContact() {
         return (
           <Form onSubmit={formik.handleSubmit}>
             <Grid container className="form-contorol-holder">
-              <InputField label="نام" name="name" />
-
-              <InputField label="نام خانوادگی " name="lastname" />
+              {/* <TextField
+                label="نام"
+                name={"first_name"}
+                onBlur={formik.handleBlur}
+                onChange={formik.handleChange}
+                value={formik.values.first_name}
+                error={Boolean(
+                  formik.touched.first_name && formik.errors.first_name
+                )}
+                helperText={
+                  formik.touched.first_name && formik.errors.first_name
+                }
+              />
+              <TextField
+                label="نام خانوادگی "
+                name={"last_name"}
+                onBlur={formik.handleBlur}
+                onChange={formik.handleChange}
+                value={formik.values.first_name}
+                error={Boolean(
+                  formik.touched.last_name && formik.errors.last_name
+                )}
+                helperText={formik.touched.last_name && formik.errors.last_name}
+              />
+              <TextField
+                label="ایمیل"
+                name={"email"}
+                onBlur={formik.handleBlur}
+                onChange={formik.handleChange}
+                value={formik.values.first_name}
+                error={Boolean(formik.touched.email && formik.errors.email)}
+                helperText={formik.touched.email && formik.errors.email}
+              />
+              <TextField
+                label="شماره همراه "
+                name={"phone"}
+                onBlur={formik.handleBlur}
+                onChange={formik.handleChange}
+                value={formik.values.first_name}
+                error={Boolean(formik.touched.phone && formik.errors.phone)}
+                helperText={formik.touched.phone && formik.errors.phone}
+              />
+              <TextField
+                label="پیام"
+                name={"note"}
+                onBlur={formik.handleBlur}
+                onChange={formik.handleChange}
+                value={formik.values.first_name}
+                error={Boolean(formik.touched.note && formik.errors.note)}
+                helperText={formik.touched.note && formik.errors.note}
+              /> */}
+              <InputField label="نام  " name="first_name" />
+              <InputField label="نام خانوادگی " name="last_name" />
               {/* <TextField
                   id="filled-basic"
                   label=" نام خانوادگی"
@@ -96,18 +137,13 @@ function FormContact() {
                     ) : null} */}
 
               <InputField label="ایمیل " name="email" />
-
-              <InputField label="پیام " name="comment" />
+              <InputField label="شماره همراه " name="phone" />
+              <InputField label="پیام " name="note" />
 
               {/* {formik.touched.comment && formik.errors.comment ? (
                         <div>{formik.errors.comment}</div>
                       ) : null} */}
-              <Button
-                variant="contained"
-                className="btn-send"
-                type="submit"
-                fullWidth
-              >
+              <Button variant="contained" className="btn-send" type="submit">
                 ارسال
               </Button>
             </Grid>
@@ -117,4 +153,5 @@ function FormContact() {
     </Formik>
   );
 }
+
 export default FormContact;

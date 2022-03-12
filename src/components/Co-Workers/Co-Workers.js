@@ -1,15 +1,36 @@
-import React from "react";
-import GoogleMapComponents from "./Google";
-import img1 from "../../Assets/images/تماس با ما 1 (1).png";
-import "./ContactUs.css";
-import FormContact from "../Form/Form";
+import React, { useEffect } from "react";
+import headerimg from "../../Assets/images/Rectangle 60.png";
+import axios from "axios";
+import brandimg from "../../Assets/images/Untitled-1 1.png";
 import { Grid } from "@mui/material";
-function ContactUs() {
+import FormContact from "../Form/Form";
+import Button from "@mui/material/Button";
+import img from "../../Assets/images/Untitled-2 1.png";
+import "./Co-Workers.css";
+function CoWorkers() {
+  const data = [
+    { img: brandimg },
+    { img: brandimg },
+    { img: brandimg },
+    { img: brandimg },
+    { img: brandimg },
+    { img: brandimg },
+    { img: brandimg },
+    { img: brandimg },
+  ];
+  const Getinfo = () => {
+    axios.get("http://localhost:8000/api/co-workers").then((res) => {
+      console.log(res);
+    });
+  };
+  useEffect(() => {
+    Getinfo();
+  }, []);
   return (
-    <div>
+    <>
       <div className="img-holder">
-        <img src={img1} className="img-roll" />
-        <h3 className="head-roll"> ارتباط ما</h3>
+        <img src={headerimg} className="img-roll" />
+        <h3 className="head-roll"> همکاران استراتزیک</h3>
       </div>
       <div className="text-about-us">
         <p>
@@ -37,25 +58,42 @@ function ContactUs() {
           نگرش عمیق، توسعه و موفقیت نوآوران را فراهم آورده است..
         </p>
       </div>
-      <Grid container className="map-wrapper">
-        <Grid item className="">
-          <div className="title-map">
-            <h3>مرکز رویش و شکوفایی استعداد</h3>
+      <div className="title-roshasubteam">
+        <h3> مرکز رویشا</h3>
+        <div className="line"></div>
+      </div>
+      <Grid container className="brand-holder">
+        {data.map((item, index) => {
+          return (
+            <Grid item xs={6} md={3} className="brand-item-holder">
+              <div className="img-brand-holder">
+                <img src={brandimg} />
+              </div>
+            </Grid>
+          );
+        })}
+      </Grid>
+      <Grid container>
+        <Grid item xs={12} md={4} className="right-side-rosha-services">
+          <div className="img-holder-services">
+            <img src={img} />
+          </div>
+        </Grid>
+        <Grid item xs={12} md={8} className="left-side-rosha-services">
+          <div className="info-holder1">
+            <h4>مرکز روشا</h4>
             <div className="line"></div>
             <p>
-              مرکز رویش و شکوفایی استعداد روشا از سال 1394 با کسب مجوز های لازم
-              در حوزه استعدادیابی و استعدادپروری کودک و نوجوان شروع به فعالیت
-              های علمی و پژوهشی و ایجاد زیرساخت های لازم و انجام طرح های سراسری
-              کرد، با توجه به توسعه فعالیت های این مجموعه از فروردین سال 1400 با
-              رویکردی جدید و استقرار در مرکز نوآوری دانشکده روانشناسی و علوم
-              تربیتی دانشگاه تهران، با حضور معاونت علمی و فناوری ریاست جمهوری
-              جناب آقای دکتر ستاری، این فعالیت ها در حوزه های تخصصی ارزیابی و
-              غربالگری، کشف استعداد، پرورش استعداد و شتابدهی و حمایت از
-              استعدادهای کودکان و نوجوانان متناظر با اهداف مرکز نوآوری آغاز به
-              کار نمود. مرکز استعدادیابی روشا با حمای
+              {" "}
+              نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و
+              متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای
+              شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود
+              ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته،
+              حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم
+              افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان
+              خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. */
             </p>
           </div>
-          <GoogleMapComponents />
         </Grid>
       </Grid>
       <Grid container className="form-holder">
@@ -68,13 +106,17 @@ function ContactUs() {
               مرکز رویش و شکوفایی استعداد روشا از سال 1394 با کسب مجوز های لازم
               در حوزه استعدادیابی و استعدادپروری کودک و نوجوان شروع به فعالیت
               های علمی و پژوهشی و ایجاد زیرساخت های لازم و انجام طرح های سراسری
-              کرد، با توجه به توسعه فعالیت های این مجموعه از فروردین سال 1400 با
+              م در حوزه استعدادیابی و استعدادپروری کودک و نوجوان شروع به فعالیت
+              های علمی و پژوهشی و ایجاد زیرساخت های لازم و انجام طرح های سراسری
+              کرد، با توجه به توسعه فعالیت های این مجموعه از فروردین سال 1400
+              باکرد، با توجه به توسعه فعالیت های این مجموعه از فروردین سال 1400
+              با
             </p>
           </div>
           <FormContact />
         </Grid>
       </Grid>
-    </div>
+    </>
   );
 }
-export default ContactUs;
+export default CoWorkers;
