@@ -58,20 +58,27 @@ function CoWorkers() {
           نگرش عمیق، توسعه و موفقیت نوآوران را فراهم آورده است..
         </p>
       </div>
-      <div className="title-roshasubteam">
-        <h3> مرکز رویشا</h3>
-        <div className="line"></div>
-      </div>
-      <Grid container className="brand-holder">
-        {data.map((item, index) => {
-          return (
-            <Grid item xs={6} md={3} className="brand-item-holder">
-              <div className="img-brand-holder">
-                <img src={brandimg} />
-              </div>
-            </Grid>
-          );
-        })}
+
+      <Grid container className="brand-wrapper">
+        <Grid item xs={10} className="brand-holder">
+          <Grid item xs={12} className="title-co-workers">
+            <div>
+              <h3> مرکز رویشا</h3>
+              <div className="line"></div>
+            </div>
+          </Grid>
+          <Grid container>
+            {data.map((item, index) => {
+              return (
+                <Grid item xs={6} md={3} className="brand-item-holder">
+                  <div className="img-brand-holder">
+                    <img src={brandimg} />
+                  </div>
+                </Grid>
+              );
+            })}
+          </Grid>
+        </Grid>
       </Grid>
       <Grid container>
         <Grid item xs={12} md={4} className="right-side-rosha-services">
@@ -79,7 +86,7 @@ function CoWorkers() {
             <img src={img} />
           </div>
         </Grid>
-        <Grid item xs={12} md={8} className="left-side-rosha-services">
+        <Grid item xs={12} md={6} className="left-side-rosha-services">
           <div className="info-holder1">
             <h4>مرکز روشا</h4>
             <div className="line"></div>

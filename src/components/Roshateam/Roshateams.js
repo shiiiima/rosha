@@ -98,18 +98,30 @@ function Roshateams() {
           نگرش عمیق، توسعه و موفقیت نوآوران را فراهم آورده است..
         </p>
       </div>
-      <div className="title-roshasubteam">
-        <h3> مرکز رویشا</h3>
-        <div className="line"></div>
-      </div>
-      {data.map((item, index) => {
-        return <Roshateam item={item} index={item.id} />;
-      })}
-      <div className="title-roshasubteam">
-        <h3> رمرکز رویا</h3>
-        <div className="line"></div>
-      </div>
+
+      <Grid container className="roshateam-holder">
+        <Grid item xs={12} className="title-roshasubteam">
+          <div>
+            <h3> مرکز رویشا</h3>
+            <div className="line"></div>
+          </div>
+        </Grid>
+        {data.map((item, index) => {
+          return (
+            <Grid item xs={12} className="roshateam">
+              <Roshateam item={item} index={item.id} />;
+            </Grid>
+          );
+        })}
+      </Grid>
       <Grid container className="roshasubteam-holder">
+        <Grid item xs={12} className="title-roshasubteam">
+          <div>
+            <h3> رمرکز رویا</h3>
+            <div className="line"></div>
+          </div>
+        </Grid>
+
         {data.map((item, index) => {
           return (
             <>

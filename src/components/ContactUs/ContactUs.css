@@ -23,9 +23,26 @@
   width: 100%;
   background-color: #F4F4F4;
   padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .form-holder{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.form-holder-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.address-holder{
+  width: 70%;
+}
+.google-map-holder{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }

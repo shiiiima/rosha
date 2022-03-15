@@ -16,15 +16,45 @@
     background-color: #6AA3AE;
 }
 .roshasubteam-holder{
-    padding: 20px 60px;
+   width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  
 }
 .roshasubteam-item-holder{
     padding:20px ;
 }
 .title-roshasubteam{
-  margin-right: 50%;
+
 }
 .seminar-about{
     margin-top: 50px;
+}
+.roshateam-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-roshasubteam{
+display: flex;
+justify-content: center;
+}
+.title-roshasubteam h3{
+    text-align: center;
+}
+.roshateam{
+margin-right: 100px ;
+}
+.roshasubteam-item-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.roshasubteam-info-holder{
+    text-align: center;
+}
+.roshasubteam-info-holder p{
+    max-width: 300px;
 }

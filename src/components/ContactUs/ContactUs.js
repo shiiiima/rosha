@@ -38,7 +38,7 @@ function ContactUs() {
         </p>
       </div>
       <Grid container className="map-wrapper">
-        <Grid item className="">
+        <Grid item className="address-holder">
           <div className="title-map">
             <h3>مرکز رویش و شکوفایی استعداد</h3>
             <div className="line"></div>
@@ -59,7 +59,7 @@ function ContactUs() {
         </Grid>
       </Grid>
       <Grid container className="form-holder">
-        <Grid item>
+        <Grid item className="form-holder-wrapper">
           <div className="info-holder">
             <h3>ارتباط با ما</h3>
             <div className="line"></div>

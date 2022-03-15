@@ -107,7 +107,7 @@ function AboutUs() {
       </Grid>
       <div className="blue-line"></div>
       <Grid container className="about-us-info">
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={5}>
           <div className="info-holder1">
             <h4>درباره ما</h4>
             <div className="line"></div>
@@ -124,15 +124,15 @@ function AboutUs() {
           </div>
           <SliderAboutUs />
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={5}>
           <img src={img1} />
         </Grid>
       </Grid>
       <Grid container className="chesmandaz-about">
-        <Grid item xs={6} md={6} className="">
+        <Grid item xs={12} md={5} className="">
           <img src={img2} />
         </Grid>
-        <Grid item xs={12} md={6} className="info-holder">
+        <Grid item xs={12} md={5} className="info-holder">
           <h4> چشم انداز</h4>
           <div className="line"></div>
           <p>

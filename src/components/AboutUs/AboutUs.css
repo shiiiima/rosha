@@ -1,9 +1,16 @@
 .numbers-about-us{
     background-color: #4F8794;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .items-about-us{
 text-align: center;
 color: white;
+
+
+justify-content: center;
+align-items: center;
 
 }
 .items-about-us p{
@@ -18,6 +25,8 @@ font-size: 20px;
     width: 100%;
  display: flex;
  justify-content: center;
+ text-align: justify;
+text-justify: inter-word;
 }
 .text-about-us p{
     width: 80%;
@@ -25,6 +34,8 @@ font-size: 20px;
 }
 .about-us-info{
     margin: 50px ;
+    display: flex;
+    justify-content: center;
 }
 
 .slider-card-aboutus{
@@ -59,6 +70,8 @@ font-size: 15px;
 .chesmandaz-about{
     margin-top: 100px;
     background-color: rgba(226, 226, 226, 1);
+    display: flex;
+    justify-content: center;
 }
 .chesmandaz-about img{
     width: 530;
@@ -92,9 +105,13 @@ font-size: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-align: center;
 }
 .blue-line{
     width: 100%;
     height: 15px;
     background-color: rgba(79, 135, 148, 1);
+}
+.info-holder1 p{
+    text-align: justify;
 }

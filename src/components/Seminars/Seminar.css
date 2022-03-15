@@ -83,6 +83,7 @@ color: white;
 .img-seminar-holder{
     margin-top: 26px!important;
     z-index: 2;
+    margin-left: -80px!important;
 }
 .img-seminar-holder img{
     width: 400px;
@@ -92,15 +93,29 @@ color: white;
     background-color:rgba(79, 135, 148, 1);
     width: 250px;
     height: 15px;
-   
-    margin-right: 154px;
+/*    
+    margin-right: 154px; */
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    margin-top: -10px;
+    /* margin-top: -10px; */
     z-index: 1;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 
 }
 .cards-seminar{
-    margin: 50px 30px;
+    margin-top: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.cards-info-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.cards-info-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }

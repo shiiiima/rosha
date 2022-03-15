@@ -62,19 +62,20 @@ function Service() {
           نگرش عمیق، توسعه و موفقیت نوآوران را فراهم آورده است..
         </p>
       </div>
-      <Grid container className="numbers-about-us">
-        <Grid item xs={6} md={3} className="items-about-us">
+      <Grid container className="numbers-rosha-services">
+        <Grid item xs={6} md={3} className="items-rosha-services">
           <CountUp end={talent_scout_count} duration={2} />
           <p>آزمون اجرا شده</p>
         </Grid>
-        <Grid item xs={6} md={3} className="items-about-us">
+        <Grid item xs={6} md={3} className="items-rosha-services">
           <CountUp end={council_count} duration={5} />
           <p>ساعت مشاوره تخصصی</p>
         </Grid>
-        <Grid item xs={6} md={3} className="items-about-us">
-          <CountUp end={items_count} duration={5} />
-          <p> عضو آکادمی استعداد</p>
+        <Grid item xs={6} md={3} className="items-rosha-services">
+          <CountUp end={council_count} duration={5} />
+          <p>عضو آکادمی استعداد</p>
         </Grid>
+
         {/* <Grid item xs={6} md={3} className="items-about-us">
           <CountUp end={600} duration={10} />
           <p> نوع خدمت در زمینه استعدادپروری و شتابدهی استعداد</p>
@@ -152,7 +153,7 @@ function Service() {
             <img src={image} />
           </div>
         </Grid>
-        <Grid item xs={12} md={8} className="left-side-rosha-services">
+        <Grid item xs={12} md={6} className="left-side-rosha-services">
           <div className="info-holder1">
             <h4> لورم ایپسوم</h4>
             <div className="line"></div>

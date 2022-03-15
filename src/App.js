@@ -28,10 +28,19 @@ import News from "./components/News/News";
 import Service from "./components/Services/Service";
 import Branches from "./components/Branches/Branches";
 import Arzyabi from "./components/Arzyabi/Arzyabi";
+
+import { createTheme } from "@mui/material/styles";
+import Talent_scout from "./components/TalentScout/TalentScout";
+import Login from "./components/Login/Login";
+import { AuthProvider } from "./components/Context/AuthProvider";
+
+const theme = createTheme({
+  direction: "rtl",
+});
 function App() {
   return (
     <>
-      <Router>
+      <Router dir="rtl">
         <Navbar />
         <Switch>
           <Route path={"/"} exact component={HomePage} />
@@ -51,6 +60,8 @@ function App() {
           <Route path={"/branches"} component={Branches} />
           <Route path={"/services"} component={Service} />
           <Route path={"/arzyabi"} component={Arzyabi} />
+          <Route path={"/talent-scout"} component={Talent_scout} />
+          <Route path={"/login"} component={Login} />
         </Switch>
       </Router>
       {/* <IranMap /> */}

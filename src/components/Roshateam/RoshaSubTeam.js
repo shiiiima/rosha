@@ -3,15 +3,15 @@ import "./Roshateam.css";
 
 function RoshaSubTeam({ item }) {
   return (
-    <div className="">
+    <>
       <div className="">
         <img src={item.img} />
       </div>
-      <div className="">
+      <div className="roshasubteam-info-holder">
         <h3>{item.name}</h3>
-        <div>{item.info}</div>
+        <p>{item.info}</p>
       </div>
-    </div>
+    </>
   );
 }
 export default RoshaSubTeam;
