@@ -63,3 +63,9 @@ i{
 .signin-holder button{
   color: #fff;
 }
+
+@media only screen and (max-width: 768px) {
+ .navbar{
+   display: none;
+ }
+}
