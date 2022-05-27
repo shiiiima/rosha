@@ -14,3 +14,6 @@ body {
 p{
     text-align: justify;
 }
+button{
+    font-family: 'Vazir-FD' !important;
+}
