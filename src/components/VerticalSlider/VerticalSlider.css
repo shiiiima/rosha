@@ -1,21 +1,24 @@
 .vertical-slider {
   background-color: #4f8894;
-  height: 200px;
+  padding:48px 0;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
-.texts-holder {
-  margin-right: 20px;
-  width: 80%;
+.texts-holder{
+  width:80%;
 }
 .header-vertical {
   color: white;
   text-align: end;
   font-weight: 900;
+  text-align: right;
 }
 .text-vertical {
   color: white;
   text-align: end;
   font-weight: 600;
+  text-align: right;
   width: 100% !important;
 }
 .date-holder {
@@ -23,18 +26,29 @@
   justify-content: center;
   align-items: center;
 }
+.date-text{
+  text-align: center;
+}
 .date {
-  position: relative;
   width: 80px;
   height: 80px;
   border: 5px solid white;
-
   color: white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 .date h3 {
   font-size: 16px;
   font-weight: 900;
-  position: absolute;
-  margin-top: 0;
-  margin-left: 22px;
+  margin:0;
+  text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .vertical-slider{
+    padding:36ox 0;
+  }
+  .texts-holder{
+    width:100%
+  }
 }

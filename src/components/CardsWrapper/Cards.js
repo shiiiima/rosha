@@ -35,7 +35,7 @@ function Cards() {
   return (
     <Container maxWidth="lg">
       <Box className="cards-wrapper ">
-        <Grid className="cards" container spacing={4}>
+        <Grid className="cards" container spacing={8}>
           {cardsInfo.map((items, index) => {
             return (
               <Grid item xs={12} sm={6} md={3} key={index}>

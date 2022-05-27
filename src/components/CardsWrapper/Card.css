@@ -6,6 +6,9 @@
   align-items: center;
   margin: 40px 0;
 }
+.info-text{
+  text-align: center;
+}
 
 /* h2 {
   text-align: center;
